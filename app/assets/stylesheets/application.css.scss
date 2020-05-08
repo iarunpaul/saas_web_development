@@ -37,3 +37,21 @@ h1, h2, h3 {
     text-align: center;
     padding: 50px 0 100px;
 }
+ .navbar-default .navbar-brand{
+     color: white;
+}
+ 
+ .navbar-default .navbar-nav > li > a {
+     color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: transparent;
+    opacity: 0.75;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+    background-color: transparent;
+    opacity: 0.75;
+}
