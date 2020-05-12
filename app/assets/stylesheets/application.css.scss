@@ -64,12 +64,17 @@ h1, h2, h3 {
 }
 
 // Nav brand and items Styles
- .navbar-default .navbar-brand,
- .navbar-default .navbar-nav > li > a {
-      color: white;
-      &:hover, :focus {
-        color: white;
-        opacity: 0.75;
-        background-color: transparent;
-      }
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover, :focus {
+    color: white;
+    opacity: 0.75;
+    background-color: transparent;
+  }
+}
+
+// Removing the devise flash messages
+.alert-notice {
+    display : none;
 }
