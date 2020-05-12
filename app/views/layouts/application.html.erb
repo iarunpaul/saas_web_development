@@ -28,8 +28,8 @@
         </div>
         <div class="collapse navbar-collapse" id="main-navbar-content">
           <div class="nav navbar-nav navbar-right">
-            <a href="" class="btn btn-default navbar-btn ">Sign up</a>
-            <a href="" class="btn btn-default navbar-btn">Log In</a>
+            <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success navbar-btn' %>
+            <%= link_to "Log In", new_user_session_path, class: " btn btn-primary navbar-btn" %>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li class="nav-item">
