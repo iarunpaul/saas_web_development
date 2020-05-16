@@ -7,6 +7,7 @@ class User < ApplicationRecord
   belongs_to :plan   
   
   attr_accessor :stripe_card_token
+  
   # If Pro user passes the validation for email, password etc. then call Stripe
   # and tell Stripe to add a subscription by charging customer's card
   # Stripe then returns a customer token in response 

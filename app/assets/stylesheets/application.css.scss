@@ -83,3 +83,21 @@ h1, h2, h3 {
 .alert-notice {
     display : none;
 }
+.alert-danger, .alert-success {
+    text-align: center;
+    
+}
+// Styling for Devise alert messages
+
+.flash-container {
+     position: absolute;
+     width: 100%;
+  
+}
+   
+.alert-notice, .alert-alert {
+    text-align: center;
+    background: #ffffffb5;
+    border-color: #ffffffb0;
+    margin-top: -15px;
+}
