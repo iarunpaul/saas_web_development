@@ -10,13 +10,14 @@
         <h3>Description</h3>
         <%= @user.profile.description %>
       </div>
-      <div class="well profile-block profile-contact">
-        <h3>Contact details</h3>    
-        <% if true # current_user.plan_id == 2 %>
+      <% if current_user.plan_id == 2 %>
+        <div class="well profile-block profile-contact">
+          <h3>Contact details</h3> 
           <%= @user.profile.phone_number %><br/>
           <%= @user.profile.email %><br/>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
+      
     </div>
   </div>
 </div>
