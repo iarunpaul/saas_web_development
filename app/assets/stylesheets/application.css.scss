@@ -40,6 +40,10 @@ h1, h2, h3 {
 
 .home-signup-links {
   margin-top: 30px;
+   
+}
+.home > .well {
+    height: 200px;
 }
 
 // Navbar Styles
@@ -64,7 +68,7 @@ h1, h2, h3 {
         background-color:#0072ff;
     }
     &:focus {
-        background-color:#00c6ff;
+        background-color:#0072ff;
     }
 }
 
