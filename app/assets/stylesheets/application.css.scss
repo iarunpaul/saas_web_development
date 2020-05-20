@@ -40,6 +40,10 @@ h1, h2, h3 {
 
 .home-signup-links {
   margin-top: 30px;
+   
+}
+.home > .well {
+    height: 200px;
 }
 
 // Navbar Styles
@@ -64,7 +68,7 @@ h1, h2, h3 {
         background-color:#0072ff;
     }
     &:focus {
-        background-color:#00c6ff;
+        background-color:#0072ff;
     }
 }
 
@@ -100,4 +104,32 @@ h1, h2, h3 {
     background: #ffffffb5;
     border-color: #ffffffb0;
     margin-top: -15px;
+}
+
+/* Sticky footer styles-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+.footer-box {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.footer-box .text-muted {
+  margin: 20px 0;
 }
