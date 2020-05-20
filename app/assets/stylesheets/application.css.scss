@@ -43,7 +43,7 @@ h1, h2, h3 {
    
 }
 .home > .well {
-    height: 200px;
+    min-height: 200px;
 }
 
 // Navbar Styles
@@ -76,7 +76,7 @@ h1, h2, h3 {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
-  &:hover, :focus {
+  &:hover {
     color: white;
     opacity: 0.75;
     background-color: transparent;
