@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+    before_action :authenticate_user!
+    before_action :current_user_only
     # GET to /users/:user_id/profile/new
     def new
         #Render blank profile create form
@@ -45,5 +47,10 @@ class ProfilesController < ApplicationController
     private
         def profile_params
             params.require(:profile).permit(:first_name, :last_name, :avatar, :job_title, :phone_number, :email, :description)
+        end
+        
+        def current_user_only
+           @user = User.find(params[:user_id])
+           redirect_to root_url unless @user == current_user
         end    
 end
