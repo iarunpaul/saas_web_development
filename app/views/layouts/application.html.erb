@@ -25,8 +25,8 @@
             <span class="icon-bar"></span>
           </button>
            <%= link_to root_path, class:"navbar-brand"  do %>
-            <i class="fa fa-group"></i>
-            DevMatch<% end %>
+              <i class="fa fa-group"></i> DevMatch
+            <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar-content">
           <div class="nav navbar-nav navbar-right">
@@ -37,6 +37,14 @@
               <% end %>  
           </div>
           <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to "Community", users_path, class:"nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "My Account", edit_user_registration_path, class:"nav-link" %>
+              </li>
+            <% end %>
             <li class="nav-item">
               <%= link_to "Contact Us", new_contact_path, class:"nav-link" %>
             </li>
