@@ -7,9 +7,12 @@ class UsersController < ApplicationController
        
     end
     
+    
     def show
         # GET to /users/:id
         @user = User.find(params[:id])
-    end    
+    end 
+    
+   
     
 end    
