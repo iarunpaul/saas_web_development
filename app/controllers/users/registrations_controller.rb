@@ -6,14 +6,22 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # Otherwise, save the sign up as usual.
   def create
     super do |resource|
-      
+     
       if params[:plan]
         resource.plan_id = params[:plan]
+         
         if resource.plan_id == 2
           resource.save_with_subscription
         else
           resource.save
         end
+        
+        UserMailer.registration_confirmation(resource)
+        flash[:success] = "Please confirm your email address to continue"
+        redirect_to root_url
+      else
+      flash[:error] = "Ooooppss, something went wrong!"
+      redirect_to :back
         
       end
     end
