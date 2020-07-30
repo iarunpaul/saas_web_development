@@ -4,7 +4,6 @@ class UserMailer < ActionMailer::Base
      def registration_confirmation(user)
         @email = user.email
         @user = user
-        puts @user
         mail(:to => user.email, :subject => "Registration Confirmation")
      end
- end 
+ end
